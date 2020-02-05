@@ -1,0 +1,94 @@
+/*.title {
+    float: right;
+    margin-right: 100px;
+}*/
+
+.head {
+  margin-top: 54px;
+  padding-bottom: 20px;
+}
+
+#titletext h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 43px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+#titletext p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#titletext {
+  width: 100%;
+  margin-top: 0 !important;
+  /*padding-left: 20px;
+padding-right: 20px;*/
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.allergy-list {
+    margin-top: 14px;
+    font-family: Work Sans;
+}
+
+.allergy-list-item {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.allergy-list-item-text {
+    display: inline-block;
+}
+
+.allergy-list-item-radio {
+    text-align: right;
+    display: inline-block;
+    margin: 0 !important;
+    width: 0;
+}
+
+.radio {
+  margin: 0;
+}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.confirm {
+  position: sticky;
+  left: 85%;
+  bottom: 15px;
+}
