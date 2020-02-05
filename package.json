@@ -1,0 +1,23 @@
+{
+  "name": "precious",
+  "version": "0.0.1",
+  "author": "Team Jun Is So Precious",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kyrielight/Precious"
+  },
+  "license": "AGPLV3",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "mongodb": "*",
+    "mongoose": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

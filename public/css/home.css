@@ -1,0 +1,109 @@
+/*.title {
+    float: right;
+    margin-right: 100px;
+}*/
+
+.head {
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+#titletext h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 43px;
+  margin: 0;
+}
+
+#titletext {
+  width: 100%;
+  margin-top: 0 !important;
+  padding-left: 20px;
+}
+
+#profile-icon {
+  margin-top: 5% !important;
+  margin-bottom: 0;
+  height: 40px;
+  padding-right: 20px;
+}
+
+#profile-icon img {
+  float: right;
+  height: inherit;
+}
+
+h1:after,
+.h1:after,
+h2:after,
+.h2:after,
+h3:after,
+.h3:after,
+h4:after,
+.h4:after,
+h5:after,
+.h5:after,
+h6:after,
+.h6:after {
+  display: none;
+}
+
+.filter-bar {
+  width: 100%; /* Full-width */
+  background-color: #f8f8f8; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.filter-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 45px 0; /* Some top and bottom padding */
+  color: black; /* White text color */
+  font-size: 13px; /* Increased font size */
+}
+
+.restaurant-list {
+    margin: 35px;
+}
+
+.restaurant-item {
+    height: 170px;
+    background-color:#C8C8C8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.restaurant-title {
+    font-size: 24px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+.restaurant-directions {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.restaurant-directions:after {
+    content: "Directions →";
+}
+
+.restaurant-menu {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.restaurant-menu:after {
+    content: "Menu →";
+}
+
