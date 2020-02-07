@@ -13,6 +13,7 @@ var project = require('./routes/project');
 var hello = require('./routes/hello');
 var home = require('./routes/home');
 var allergies = require('./routes/allergies');
+var placeholder = require('./routes/placeholder')
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +42,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', home.view);
 app.get('/allergies', allergies.view);
+app.get('/placeholder', placeholder.view);
 // Example route
 // app.get('/users', user.list);
 

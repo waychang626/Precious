@@ -95,9 +95,6 @@ h6:after,
     font-size: 16px;
     text-transform: uppercase;
 }
-.restaurant-directions:after {
-    content: "Directions →";
-}
 
 .restaurant-menu {
     font-family: Work Sans;
@@ -106,7 +103,8 @@ h6:after,
     font-size: 16px;
     text-transform: uppercase;
 }
-.restaurant-menu:after {
-    content: "Menu →";
-}
 
+a, a:hover, a:visited, a:active {
+  color:inherit;
+  text-decoration: none;
+ }
