@@ -1,0 +1,179 @@
+{
+    "FoodWorx": {
+        "eatery_type": 1,
+        "breakfast": [
+            {
+                "name": "Bacon",
+                "ingredients": [
+                    "pork",
+                    "oil"
+                ]
+            },
+            {
+                "name": "Pork Sausage Links",
+                "ingredients": [
+                    "pork",
+                    "sausage",
+                    "oil",
+                    "corn starch"
+                ]
+            },
+            {
+                "name": "Chocolate Cake",
+                "ingredients": [
+                    "chocolate",
+                    "flour",
+                    "corn starch",
+                    "butter",
+                    "sugar",
+                    "canola oil",
+                    "eggs",
+                    "salt",
+                    "milk"
+                ]
+            },
+            {
+                "name": "Miso Soup",
+                "ingredients": [
+                    "miso stock",
+                    "mushrooms",
+                    "seaweed",
+                    "shrimp",
+                    "fish",
+                    "daikon"
+                ]
+            }
+        ],
+        "lunch": [
+            {
+                "name": "Grilled Cheese Sandwich",
+                "ingredients": [
+                    "White Jumbo Bread",
+                    "niacin",
+                    "iron",
+                    "ascorbic acid",
+                    "thiamin mononitrate",
+                    "riboflavin",
+                    "water",
+                    "soybean oil",
+                    "fresh yeast",
+                    "salt",
+                    "salt",
+                    "cheese culture",
+                    "enzymes",
+                    "soy lecithin"
+                ]
+            },
+            {
+                "name": "Ham Sandwich",
+                "ingredients": [
+                    "ciabatta bread",
+                    "water",
+                    "sliced tomatoes",
+                    "red onion",
+                    "swiss cheese",
+                    "green leaf crowns",
+                    "mayonnaise",
+                    "mustard",
+                    "ham"
+                ]
+            },
+            {
+                "name": "Cheese Personal Pizza",
+                "ingredients": [
+                    "pizza dough",
+                    "part skim mozarella cheese",
+                    "harbed parmesan cheese",
+                    "shredded mild cheddar cheese",
+                    "annatto",
+                    "natamycin",
+                    "pizza oil"
+                ]
+            }
+        ],
+        "dinner": [
+            {
+                "name": "Chicken Noodle Soup",
+                "ingredients": [
+                    "chicken",
+                    "pepper",
+                    "salt",
+                    "canola oil",
+                    "onion",
+                    "clove",
+                    "chicken broth",
+                    "celery",
+                    "carrots",
+                    "bay leaves",
+                    "thyme",
+                    "egg noodles",
+                    "parsley",
+                    "lemon juice"
+                ]
+            },
+            {
+                "name": "Supreme Personal Pizza",
+                "ingredients": [
+                    "pizza dough",
+                    "part skim mozarella cheese",
+                    "harbed parmesan cheese",
+                    "shredded mild cheddar cheese",
+                    "annatto",
+                    "natamycin",
+                    "pizza oil",
+                    "chicken",
+                    "beef",
+                    "sausage",
+                    "supreme"
+                ]
+            }
+        ]
+    },
+    "Cafe V": {
+        "eatery_type": 1,
+        "breakfast": [
+            {
+                "name": "Palermo Paella",
+                "ingredients": [
+                    "vegetable stock",
+                    "tomato paste",
+                    "garlic powder",
+                    "tomato pouch",
+                    "chicken thigh",
+                    "olive oil blend",
+                    "salt",
+                    "tumeric"
+                ]
+            }
+        ],
+        "lunch": [
+            {
+                "name": "Broccoli Cheddar Soup",
+                "ingredients": [
+                    "chicken stock",
+                    "broccoli",
+                    "light cream",
+                    "cheddar cheese",
+                    "sodium phosphate",
+                    "milkfat",
+                    "annatto",
+                    "carrots",
+                    "wheat flour"
+                ]
+            }
+        ],
+        "dinner": [
+            {
+                "name": "Garlic Bread",
+                "ingredients": [
+                    "baguette",
+                    "water",
+                    "roasted garlic aioli",
+                    "lemon",
+                    "parmesan cheese",
+                    "distilled vinegar"
+                ]
+            }
+        ]
+    }
+}

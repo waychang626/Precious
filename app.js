@@ -8,9 +8,6 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
-var project = require('./routes/project');
-var hello = require('./routes/hello');
 var home = require('./routes/home');
 var allergies = require('./routes/allergies');
 var placeholder = require('./routes/placeholder')
