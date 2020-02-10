@@ -1,0 +1,44 @@
+#main {
+
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    min-height: 100vh;
+
+    font-family: Work Sans;
+    font-style: normal;
+}	
+
+.form-control {
+    font-family: Work Sans;
+    font-style: normal;
+}
+
+#xyz {
+    font-family: Work Sans;
+    font-style: normal;
+}
+
+h1 {
+    margin-bottom: 45px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.submit {
+    margin-bottom: 40px;
+}
+
+.signup {
+    text-align: center;
+}
