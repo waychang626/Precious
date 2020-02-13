@@ -7,7 +7,8 @@
                 "ingredients": [
                     "pork",
                     "oil"
-                ]
+                ],
+                "price": "1.00"
             },
             {
                 "name": "Pork Sausage Links",
@@ -16,7 +17,8 @@
                     "sausage",
                     "oil",
                     "corn starch"
-                ]
+                ],
+                "price": "5.34"
             },
             {
                 "name": "Chocolate Cake",
@@ -30,7 +32,8 @@
                     "eggs",
                     "salt",
                     "milk"
-                ]
+                ],
+                "price": "7.00"
             },
             {
                 "name": "Miso Soup",
@@ -41,7 +44,8 @@
                     "shrimp",
                     "fish",
                     "daikon"
-                ]
+                ],
+                "price": "3.15"
             }
         ],
         "lunch": [
@@ -62,7 +66,8 @@
                     "cheese culture",
                     "enzymes",
                     "soy lecithin"
-                ]
+                ],
+                "price": "6.50"
             },
             {
                 "name": "Ham Sandwich",
@@ -76,7 +81,8 @@
                     "mayonnaise",
                     "mustard",
                     "ham"
-                ]
+                ],
+                "price": "12.55"
             },
             {
                 "name": "Cheese Personal Pizza",
@@ -88,7 +94,8 @@
                     "annatto",
                     "natamycin",
                     "pizza oil"
-                ]
+                ],
+                "price": "17.50"
             }
         ],
         "dinner": [
@@ -109,7 +116,8 @@
                     "egg noodles",
                     "parsley",
                     "lemon juice"
-                ]
+                ],
+                "price": "3.00"
             },
             {
                 "name": "Supreme Personal Pizza",
@@ -125,7 +133,8 @@
                     "beef",
                     "sausage",
                     "supreme"
-                ]
+                ],
+                "price": "420.69"
             }
         ]
     },
@@ -143,7 +152,8 @@
                     "olive oil blend",
                     "salt",
                     "tumeric"
-                ]
+                ],
+                "price": "17.60"
             }
         ],
         "lunch": [
@@ -159,7 +169,8 @@
                     "annatto",
                     "carrots",
                     "wheat flour"
-                ]
+                ],
+                "price": "4.45"
             }
         ],
         "dinner": [
@@ -172,7 +183,8 @@
                     "lemon",
                     "parmesan cheese",
                     "distilled vinegar"
-                ]
+                ],
+                "price": "0.01"
             }
         ]
     }
