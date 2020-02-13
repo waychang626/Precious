@@ -30,10 +30,12 @@
 
         <div class="header">
             <div class="back-arrow">
-                <p>⭠</p>
+                <a href="/">
+                    <p>⭠</p>
+                </a>
             </div>
             <div class="header-title">
-                <p>Foodworx</p>
+                <p>{{name}}</p>
             </div>
             <div class="profile-icon">
                 <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png">
@@ -52,35 +54,30 @@
                         <a class="nav-link active" href="#"><u><b>Breakfast</b></u></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lunch</a>
+                        <a class="nav-link" href="placeholder">Lunch</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dinner</a>
+                        <a class="nav-link" href="placeholder">Dinner</a>
                     </li>
                 </ul>
             </div>
 
             <div id="menu-items">
-                <div class="menu-item">
-                    <div class="menu-item-left">
-                        <h6>Grilled Cheese</h6>
-                        <p class="menu-item-left-price">$2.95</p>
+                {{#each food}}
+                <a href="placeholder">
+                    <div class="menu-item">
+                        <div class="menu-item-left">
+                            <h6>{{this.name}}</h6>
+                            <!-- TODO: Add prices into data -->
+                            <p class="menu-item-left-price">$2.95</p>
+                        </div>
+                        <div class="menu-item-right">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                        </div>
                     </div>
-                    <div class="menu-item-right">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="menu-item-left">
-                        <h6>Grilled Cheese</h6>
-                        <p class="menu-item-left-price">$2.95</p>
-                    </div>
-                    <div class="menu-item-right">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
-                    </div>
-                </div>
-
+                </a>
+                {{/each}}
             </div>
 
         </div>

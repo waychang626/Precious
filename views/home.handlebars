@@ -41,9 +41,9 @@
     <div class="restaurant-list fade-in">
         {{#each restaurants}}
         <div class="restaurant-item">
-            <div class="restaurant-title"><a href="placeholder">{{this}}</a></div>
+            <div class="restaurant-title"><a href="menu?restaurant={{this}}">{{this}}</a></div>
             <div class="restaurant-directions"><a href="placeholder">Directions →</a></div>
-            <div class="restaurant-menu"><a href="placeholder">Menu →</a></div>
+            <div class="restaurant-menu"><a href="menu?restaurant={{this}}">Menu →</a></div>
         </div>
         {{/each}}
     </div>
