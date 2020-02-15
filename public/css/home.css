@@ -12,7 +12,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 43px;
   margin: 0;
 }
@@ -34,8 +34,8 @@
 }
 
 #profile-icon a img {
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px
 }
 
 h1:after,
@@ -68,12 +68,15 @@ h6:after,
   font-size: 13px; /* Increased font size */
 }
 
+.filter-bar img {
+  height: 45px;
+}
+
 .restaurant-list {
   margin: 35px;
 }
 
 .restaurant-item {
-  height: 170px;
   background-color: #c8c8c8;
   border-radius: 10px;
   padding: 20px;

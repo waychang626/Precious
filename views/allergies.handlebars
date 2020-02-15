@@ -38,64 +38,17 @@
 
         <div class="allergy-list">
 
-
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Cow's Milk
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Eggs
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Tree Nuts
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Peanuts
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Shellfish
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Wheat
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Soy
-            </div>
-            <div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Fish
-            </div>
+            {{#each allergies}}
+                <div class="allergy-list-item">
+                   <p>{{this}}</p>
+                </div>
+            {{/each}}
 
             <!--<div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Cow's Milk</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Eggs</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Tree Nuts</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Peanuts</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Shellfish</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Wheat</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Soy</label></div>
-            </div>
-            <div class="allergy-list-item">
-                <div class="radio"><label><input type="radio" name="optradio">Fish</label></div>
+                <input class="form-check-input" type="checkbox" value="">
+                Cow's Milk
             </div>-->
+
         </div>
     </div>
 

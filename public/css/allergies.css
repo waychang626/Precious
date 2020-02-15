@@ -53,6 +53,11 @@ body {
     margin-bottom: 7px;
 }
 
+.allergy-list-item p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
 .allergy-list-item-text {
     display: inline-block;
 }

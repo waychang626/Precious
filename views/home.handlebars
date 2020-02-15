@@ -9,45 +9,48 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/animations.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="head">
+    <div class="fade-in">
 
-        <div id="profile-icon">
-            <a href="allergies"><img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png"
-                class="img-circle"></a>
+        <div class="head">
+
+            <div id="profile-icon">
+                <a href="allergies"><img src="/images/cog.png"></a>
+            </div>
+
+            <div id="titletext">
+                <h1>Eateries Nearby</h1>
+            </div>
         </div>
 
-        <div id="titletext">
-            <h1>Eateries Nearby</h1>
+        <div class="filter-bar">
+            <a href="placeholder"><img src="images/filter_all.png"><br>All</a>
+            <a href="placeholder"><img src="images/filter_dininghall.png"><br>Dining Halls</a>
+            <a href="placeholder"><img src="images/filter_cafe.png"><br>Cafes</a>
+            <a href="placeholder"><img src="images/filter_market.png"><br>Markets</a>
         </div>
-    </div>
 
-
-    <div class="filter-bar">
-        <a href="placeholder"><img src="images/xbox.png"><br>All</a>
-        <a href="placeholder"><img src="images/xbox.png"><br>Dining Halls</a>
-        <a href="placeholder"><img src="images/xbox.png"><br>Cafes</a>
-        <a href="placeholder"><img src="images/xbox.png"><br>Markets</a>
-    </div>
-
-    <div class="restaurant-list fade-in">
-        {{#each restaurants}}
-        <div class="restaurant-item">
-            <div class="restaurant-title"><a href="menu?restaurant={{this}}">{{this}}</a></div>
-            <div class="restaurant-directions"><a href="placeholder">Directions →</a></div>
-            <div class="restaurant-menu"><a href="menu?restaurant={{this}}">Menu →</a></div>
+        <div class="restaurant-list fade-in">
+            {{#each restaurants}}
+            <a href="menu?restaurant={{this}}">
+                <div class="restaurant-item">
+                    <div class="restaurant-title">{{this}}</div>
+                    <div class="restaurant-menu">Menu →</div>
+                </div>
+            </a>
+            {{/each}}
         </div>
-        {{/each}}
     </div>
 
 </body>
-</html>
 
+</html>
