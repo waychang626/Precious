@@ -13,6 +13,7 @@ var login = require('./routes/login');
 var menu = require('./routes/menu')
 var allergies = require('./routes/allergies');
 var placeholder = require('./routes/placeholder')
+var entree = require('./routes/entree')
 // Example route
 // var user = require('./routes/user');
 
@@ -40,8 +41,9 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', home.view);
-app.get('/login', login.view)
-app.get('/menu', menu.view)
+app.get('/login', login.view);
+app.get('/menu', menu.view);
+app.get('/entree', entree.view);
 app.get('/allergies', allergies.view);
 app.get('/placeholder', placeholder.view);
 
