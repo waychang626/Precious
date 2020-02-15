@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Menu</title>
+    <title>{{restaurant}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,7 +24,7 @@
 
         <div class="header">
             <div class="back-arrow">
-                <a href="/menu?restaurant={{name}}">
+                <a href="/menu?restaurant={{restaurant}}">
                     <p>⭠</p>
                 </a>
             </div>
@@ -42,19 +42,25 @@
 
         <div id="content" class="green-title">
             <div id="title">
-                <h3>Grilled Cheese Sandwich</h3>
-                <p>$2.95</p>
+                <h3>{{entree}}</h3>
+                <p>${{price}}</p>
             </div>
 
             <div id="allergens">
                 <div id="allergen-title">
                     <h4 class="green-title">Allergens</h4>
                 </div>
+                {{#if allergens}}
                 <div id="allergen-list" class="list-items">
-                    <p>Eggs</p>
-                    <p>Eggs</p>
-                    <p>Eggs</p>
+                    {{#each allergens}}
+                    <p>{{this}}</p>
+                    {{/each}}
                 </div>
+                {{else}}
+                <div class="list-items">
+                    None found, enjoy your food!
+                </div>
+                {{/if}}
             </div>
 
             <div id="ingredients">
@@ -62,10 +68,9 @@
                     <h4 class="green-title">Ingredients</h4>
                 </div>
                 <div id="ingredients-list" class="list-items">
-                    <p>Cheese</p>
-                    <p>Bread</p>
-                    <p>Bread</p>
-                    <p>Bread</p>
+                    {{#each ingredients}}
+                    <p>{{this}}</p>
+                    {{/each}}
                 </div>
             </div>
 

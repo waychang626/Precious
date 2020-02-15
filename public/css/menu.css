@@ -64,6 +64,11 @@
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px;
+  background: #DCEDC8;
+  border-radius: 10px;
 }
 
 .hscroll {

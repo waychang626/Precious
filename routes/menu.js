@@ -18,7 +18,7 @@ exports.view = function(req, res) {
     var dinner_unsafe = dinnerList[1];
 
     var pagedata = {
-        "name": restaurant,
+        "restaurant": restaurant,
         "breakfastSafe": breakfast_safe,
         "breakfastUnsafe": breakfast_unsafe,
         "lunchSafe": lunch_safe,

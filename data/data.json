@@ -6,7 +6,8 @@
                 "name": "Bacon",
                 "ingredients": [
                     "pork",
-                    "oil"
+                    "oil",
+                    "eggs"
                 ],
                 "price": "1.00"
             },
