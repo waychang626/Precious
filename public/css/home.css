@@ -114,3 +114,11 @@ a:active {
   color: inherit;
   text-decoration: none;
 }
+
+.hide {
+  display: none;
+}
+
+.selected {
+  font-weight: bold;
+}

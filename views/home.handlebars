@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <!-- Add icon library -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Finally, load our JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/home.js"></script>
 </head>
 
 <body>
@@ -33,14 +36,31 @@
         </div>
 
         <div class="filter-bar">
-            <a href="placeholder"><img src="images/filter_all.png"><br>All</a>
-            <a href="placeholder"><img src="images/filter_dininghall.png"><br>Dining Halls</a>
-            <a href="placeholder"><img src="images/filter_cafe.png"><br>Cafes</a>
-            <a href="placeholder"><img src="images/filter_market.png"><br>Markets</a>
+            <div id="all">
+                <a href="placeholder">
+                    <img src="images/filter_all.png"><br>
+                    <p id="all-text" class="selected">All</p>
+                </a>
+            </div>
+            <div id="dining-hall">
+                <a href="placeholder"><img src="images/filter_dininghall.png"><br>
+                    <p id="dining-hall-text">Dining Halls</p>
+                </a>
+            </div>
+            <div id="cafe">
+                <a href="placeholder"><img src="images/filter_cafe.png"><br>
+                    <p id="cafe-text">Cafes</p>
+                </a>
+            </div>
+            <div id="markets">
+                <a href="placeholder"><img src="images/filter_market.png"><br>
+                    <p id="markets-text">Markets</p>
+                </a>
+            </div>
         </div>
 
-        <div class="restaurant-list fade-in">
-            {{#each restaurants}}
+        <div id="all-list" class="restaurant-list">
+            {{#each all}}
             <a href="menu?restaurant={{this}}">
                 <div class="restaurant-item">
                     <div class="restaurant-title">{{this}}</div>
@@ -49,6 +69,40 @@
             </a>
             {{/each}}
         </div>
+
+        <div id="dining-halls-list" class="restaurant-list hide">
+            {{#each dining_halls}}
+            <a href="menu?restaurant={{this}}">
+                <div class="restaurant-item">
+                    <div class="restaurant-title">{{this}}</div>
+                    <div class="restaurant-menu">Menu →</div>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+
+        <div id="cafes-list" class="restaurant-list hide">
+            {{#each cafes}}
+            <a href="menu?restaurant={{this}}">
+                <div class="restaurant-item">
+                    <div class="restaurant-title">{{this}}</div>
+                    <div class="restaurant-menu">Menu →</div>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+
+        <div id="markets-list" class="restaurant-list hide">
+            {{#each markets}}
+            <a href="menu?restaurant={{this}}">
+                <div class="restaurant-item">
+                    <div class="restaurant-title">{{this}}</div>
+                    <div class="restaurant-menu">Menu →</div>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+
     </div>
 
 </body>
