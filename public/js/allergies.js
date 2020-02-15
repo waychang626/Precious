@@ -6,7 +6,13 @@ $(document).ready(function () {
     $("#addAllergyForm").submit(onAllergySubmit2);
     $("#allergy-input").keyup(onAllergyKeyUp);
     $(".allergy-list-item-trash").click(onAllergyTrashClick);
+    $("#allDone").click(allDone);
 })
+
+function allDone(e) {
+    e.preventDefault();
+    window.location.replace("/")
+}
 
 /*
  * Function that is called when the document is ready.

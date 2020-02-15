@@ -5,7 +5,9 @@
 var data = require("../data/data.json")
 
 exports.view = function(req, res) {
-    const restaurants = Object.keys(data)
+    var restaurants = Object.keys(data)
+    restaurants.sort();
+
     res.render('home', {
         restaurants: restaurants
     });
