@@ -51,7 +51,7 @@ function clearSelected() {
     $("#all-text").removeClass("selected");
     $("#dining-hall-text").removeClass("selected");
     $("#cafe-text").removeClass("selected");
-    $("markets-text").removeClass("selected");
+    $("#markets-text").removeClass("selected");
 }
 
 // Helper to add hide to every div
