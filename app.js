@@ -44,6 +44,9 @@ app.get('/login', login.view)
 app.get('/menu', menu.view)
 app.get('/allergies', allergies.view);
 app.get('/placeholder', placeholder.view);
+
+app.post('/allergies-update', allergies.update);
+app.post('/allergies-remove', allergies.remove);
 // Example route
 // app.get('/users', user.list);
 

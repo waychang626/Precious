@@ -69,6 +69,20 @@ body {
     width: 0;
 }
 
+.allergy-list-item-title {
+  display: inline-block;
+  min-width: 85%;
+}
+
+.allergy-list-item-trash {
+  display: inline-block;
+}
+
+.allergy-list-item-trash img {
+  height: 30px;
+  width: 30px;
+}
+
 .radio {
   margin: 0;
 }
@@ -96,4 +110,8 @@ body {
   position: sticky;
   left: 85%;
   bottom: 15px;
+}
+
+#allergyAddStatusText {
+    font-family: Work Sans;
 }

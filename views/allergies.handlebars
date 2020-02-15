@@ -11,11 +11,15 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/allergies.css" rel="stylesheet">
+    <link href="/css/animations.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Finally, load our JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/allergies.js"></script>
 </head>
 
 <body>
@@ -23,7 +27,7 @@
 
         <div id="titletext">
             <h1>Greetings, Rosie</h1>
-            <p>Select your allergies. <br><br>We'll help you find the foods you can eat.</p>
+            <p>Please add your allergies. <br><br>We'll help you find the foods you can eat.</p>
         </div>
 
 
@@ -31,28 +35,41 @@
     </div>
     <div class="allergies">
         <div class="search-box">
-            <div class="active-cyan-3 active-cyan-4 mb-4 search">
+            <!--<div class="active-cyan-3 active-cyan-4 mb-4 search">
                 <input class="form-control" type="text" placeholder="Search for allergies" aria-label="Search">
-            </div>
-        </div>
-
-        <div class="allergy-list">
-
-            {{#each allergies}}
-                <div class="allergy-list-item">
-                   <p>{{this}}</p>
-                </div>
-            {{/each}}
-
-            <!--<div class="allergy-list-item">
-                <input class="form-check-input" type="checkbox" value="">
-                Cow's Milk
             </div>-->
 
+            <form id="addAllergyForm" role="form">
+                <div class="form-group">
+                    <!--<label for="allergy">Allergy:</label>-->
+                    <input type="text" class="form-control" id="allergy-input" placeholder="Enter allergy here"
+                        name="allergy">
+                    <p id="allergyAddStatusText"></p>
+                </div>
+                <input type="submit" id="submitBtn" class="btn btn-outline-primary btn-block disabled"
+                    value="Add allergy"></input>
+            </form>
+
+        </div>
+
+        <hr>
+
+        <div class="allergy-list" id="allergy-list">
+
+            {{#each allergies}}
+            <div class="allergy-list-item">
+                <div class="allergy-list-item-title">
+                    <p>{{this}}</p>
+                </div>
+                <div class="allergy-list-item-trash">
+                    <img src="/images/trash.png">
+                </div>
+            </div>
+            {{/each}}
         </div>
     </div>
 
-    <a class="confirm btn btn-default btn-circle btn-lg" href="/"><i class="glyphicon glyphicon-ok"></i></a>
+    <!--<a class="confirm btn btn-default btn-circle btn-lg" href="/"><i class="glyphicon glyphicon-ok"></i></a>-->
 
 </body>
 
