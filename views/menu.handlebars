@@ -22,6 +22,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link href="/css/menu.css" rel="stylesheet">
+    <!-- Finally, load our JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 
 <body>
@@ -51,33 +54,121 @@
             <div class="hscroll">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><u><b>Breakfast</b></u></a>
+                        <a class="nav-link active" href="#" id="hbreakfast">Breakfast</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="placeholder">Lunch</a>
+                        <a class="nav-link" href="placeholder" id="hlunch">Lunch</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="placeholder">Dinner</a>
+                        <a class="nav-link" href="placeholder" id="hdinner">Dinner</a>
                     </li>
                 </ul>
             </div>
 
             <div id="menu-items">
-                {{#each food}}
-                <a href="placeholder">
-                    <div class="menu-item">
-                        <div class="menu-item-left">
-                            <h6>{{this.name}}</h6>
-                            <!-- TODO: Add prices into data -->
-                            <p class="menu-item-left-price">${{this.price}}</p>
+
+                <div id="mbreakfast">
+                    {{#each breakfastSafe}}
+                    <a href="placeholder">
+                        <div class="menu-item">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">${{this.price}}</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
                         </div>
-                        <div class="menu-item-right">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                    </a>
+                    {{/each}}
+                </div>
+
+                <div id="mbreakfastUnsafe">
+                    {{#each breakfastUnsafe}}
+                    <a href="placeholder">
+                        <div class="menu-item menu-item-unsafe">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">Restriction found!</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
                         </div>
-                    </div>
-                </a>
-                {{/each}}
+                    </a>
+                    {{/each}}
+                </div>
+
+                <div class="hide" id="mlunch">
+                    {{#each lunchSafe}}
+                    <a href="placeholder">
+                        <div class="menu-item">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">${{this.price}}</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
+                        </div>
+                    </a>
+                    {{/each}}
+                </div>
+
+                <div class="hide" id="mlunchUnsafe">
+                    {{#each lunchUnsafe}}
+                    <a href="placeholder">
+                        <div class="menu-item menu-item-unsafe">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">Restriction found!</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
+                        </div>
+                    </a>
+                    {{/each}}
+                </div>
+
+                <div class="hide" id="mdinner">
+                    {{#each dinnerSafe}}
+                    <a href="placeholder">
+                        <div class="menu-item">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">${{this.price}}</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
+                        </div>
+                    </a>
+                    {{/each}}
+                </div>
+
+                <div class="hide" id="mdinnerUnsafe">
+                    {{#each dinnerUnsafe}}
+                    <a href="placeholder">
+                        <div class="menu-item menu-item-unsafe">
+                            <div class="menu-item-left">
+                                <h6>{{this.name}}</h6>
+                                <p class="menu-item-left-price">Restriction found!</p>
+                            </div>
+                            <div class="menu-item-right">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Screw_Head_-_Square_External.svg/480px-Screw_Head_-_Square_External.svg.png">
+                            </div>
+                        </div>
+                    </a>
+                    {{/each}}
+                </div>
+
             </div>
 
         </div>

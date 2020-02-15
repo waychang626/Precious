@@ -76,6 +76,10 @@
   padding-bottom: 20px;
 }
 
+.menu-item-unsafe h6 {
+  color: red;
+}
+
 .menu-item-left {
   display: inline-block;
   max-width: 65%;
@@ -107,4 +111,13 @@ a:visited,
 a:active {
   color: inherit;
   text-decoration: none;
+}
+
+.active {
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
